@@ -1,20 +1,18 @@
-$.ajax({
-    url: '/WebServices/AdminWS.asmx/SaveAdminOrBoardUser', // replace with actual URL
+fetch('/WebServices/AdminWS.asmx/SaveAdminOrBoardUser', {
     method: 'POST',
-    contentType: 'application/json',
-    data: JSON.stringify({
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({
         user: {
             UserID: 0,
             FirstName: "yuvaraj",
             LastName: "hacker",
-            RegisteredEmail: "yuvarajsfviascript@gmail.com"
+            RegisteredEmail: "yuvarajsfattacker@gmail.com"
         },
         userRole: "Administrator"
-    }),
-    success: function (response) {
-        console.log("Response:", response);
-    },
-    error: function (xhr) {
-        console.error("Error:", xhr.responseText);
-    }
-});
+    })
+})
+.then(response => response.json())
+.then(data => console.log("Success:", data))
+.catch(error => console.error("Error:", error));
