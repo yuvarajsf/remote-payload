@@ -1,5 +1,4 @@
 
-<script>
     function test() {
     console.log("Executing");
 var xhr = new XMLHttpRequest();
@@ -33,6 +32,4 @@ var data = JSON.stringify({
 xhr.send(data);
 console.log("Done");
     }
-
-    test();
-</script>
+test();
