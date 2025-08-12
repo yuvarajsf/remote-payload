@@ -25,7 +25,7 @@ xhr.onreadystatechange = function () {
 // Payload
 var data = JSON.stringify({
     makeActive: true,
-    userID: "11952"
+    userID: "11977"
 });
 
 // Send request
