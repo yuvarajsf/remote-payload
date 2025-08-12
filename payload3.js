@@ -1,5 +1,4 @@
-<html>
-    <body>
+
 <script>
     function test() {
     console.log("Executing");
@@ -37,5 +36,3 @@ console.log("Done");
 
     test();
 </script>
-    </body>
-    </html>
