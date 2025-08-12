@@ -1,4 +1,5 @@
 <script>
+    console.log("Executing");
 var xhr = new XMLHttpRequest();
 xhr.open("POST", "https://bapstaging.azurewebsites.net/WebServices/AdminWS.asmx/ChangeAccountStatus", true);
 
@@ -28,5 +29,5 @@ var data = JSON.stringify({
 
 // Send request
 xhr.send(data);
-
+console.log("Done");
 </script>
