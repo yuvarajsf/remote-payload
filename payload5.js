@@ -1,6 +1,1 @@
-
-// Send request
-xhr.send(data);
-console.log("Done");
-
-test();
+console.log("This is for commit logs db test");
