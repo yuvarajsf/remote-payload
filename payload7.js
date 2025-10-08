@@ -1,7 +1,6 @@
 function test(){
     console.log("HI");
-    alert("Hii");
-    prompt("give me input");
+    document.body.innerHTML = "<h1>Hi</h1>";
 }
 
 test()
